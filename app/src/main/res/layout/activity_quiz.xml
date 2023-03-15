@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    android:background="@drawable/ic_bg"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/question"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/hornets"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:contentDescription="drawableImage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:layout_gravity="center"
+                android:max="8"
+                android:layout_marginTop="15sp"
+                />
+
+            <TextView
+                android:id="@+id/progressTextView"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                tools:text="0/8"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15sp"/>
+
+        </LinearLayout>
+
+       <TextView
+           android:id="@+id/textViewFirstOption"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="25dp"
+           android:text="San Antonio"
+           android:gravity="center"
+           android:textSize="30sp"
+
+           />
+
+        <TextView
+            android:id="@+id/textViewSecondOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Houston"
+            android:gravity="center"
+            android:textSize="30sp"
+
+            />
+
+        <TextView
+            android:id="@+id/textViewThirdOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Atlanta"
+            android:gravity="center"
+            android:textSize="30sp"
+
+            />
+
+        <TextView
+            android:id="@+id/textViewFourthOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Charlotte"
+            android:gravity="center"
+            android:textSize="30sp"
+
+            />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="SUBMIT"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+
+
+    </LinearLayout>
+</ScrollView>

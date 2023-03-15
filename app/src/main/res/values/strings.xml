@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Custom Aplication</string>
+    <string name="welcome">WELCOME</string>
+    <string name="question">What city is this team from?</string>
+    <string name="result_name">Username</string>
+    <string name="score">Your score is 0/8</string>
+    <string name="hey_congratulations">Hey, congratulations!</string>
+    <string name="result">Result</string>
+    <string name="imageview">imageView</string>
+    <string name="finish">FINISH</string>
+</resources>
